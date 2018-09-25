@@ -14,7 +14,7 @@ if (! isset($_GET['code'])) {
 } else {
   $client->authenticate($_GET['code']);
   $_SESSION['access_token1'] = $client->getAccessToken();
-  $redirect_uri = 'https://' . $_SERVER['HTTP_HOST'] . '/backupsel.php';
+  $redirect_uri = 'https://' . $_SERVER['HTTP_HOST'] . '/ab/backupsel.php';
   header('Location: ' . filter_var($redirect_uri, FILTER_SANITIZE_URL));
 }
 ?>
