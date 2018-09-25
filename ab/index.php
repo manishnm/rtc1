@@ -49,7 +49,7 @@
 						session_start();
                                            if(isset($_SESSION['access_token']) && isset($_SESSION['userData'])) 
                                            {
-      						 header('Location:https://abhishekrt.xyz/albums.php');                                            
+      						 header('Location:https://rtdownloader.herokuapp.com/ab/albums.php');                                            
                                            }
                                            
 
