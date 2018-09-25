@@ -57,7 +57,7 @@
 
    require_once "config.php" ;
    
-   $redirecturl = "https://abhishekrt.xyz/fbcallback.php";
+   $redirecturl = "https://rtdownloader.herokuapp.com/ab/fbcallback.php";
    $permissions = ['user_photos'];
    $loginurl = $helper->getLoginUrl($redirecturl, $permissions);
    
