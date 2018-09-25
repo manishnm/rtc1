@@ -5,7 +5,7 @@ session_start();
 
 $client = new Google_Client();
 $client->setAuthConfigFile('client_secrets.json');
-$client->setRedirectUri('https://' . $_SERVER['HTTP_HOST'] . '/backup1.php');
+$client->setRedirectUri('https://' . $_SERVER['HTTP_HOST'] . '/ab/backup1.php');
 $client->addScope("https://www.googleapis.com/auth/drive.file");
 
 if (! isset($_GET['code'])) {
