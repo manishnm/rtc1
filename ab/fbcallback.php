@@ -30,6 +30,6 @@
 //	echo "<a href='https://rtdownloader.000webhostapp.com/albums.php'>goto albums</a>";
 	//var_dump($userData);
 	$_SESSION['access_token'] = (string) $accessToken;
-	header('Location: albums.php');
+	header('Location: https://rtdownloader.herokuapp.com/ab/');
 	//exit();
 ?>
