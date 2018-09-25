@@ -124,7 +124,8 @@ $file = $driveService->files->create($fileMetadata, array(
 						}
 					 
 				}
-				 echo "<script>window.location.href='uploadsuccess.php'</script>";
+					header('Location: uploadsuccess.php');
+				
 				
 				}
 					
