@@ -176,7 +176,7 @@ $mainDirectory = "facebook_".$tmp['name']."_albums";
 		echo "<script>window.location.href='a.php?filename=$filename'</script>";
 	}
 	
-	<center><b><a href="albums.php"><u>goto to Albums</u></a></b></center>
+	echo "<center><b><a href='albums.php'><u>goto to Albums</u></a></b></center>";
 	
 	?>
 
