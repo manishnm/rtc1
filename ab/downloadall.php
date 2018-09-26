@@ -172,11 +172,22 @@ $mainDirectory = "facebook_".$tmp['name']."_albums";
 	$filename = "files/".$zipfilename;
 	if(file_exists($filename))
 	{
-	
-		echo "<script>window.location.href='a.php?filename=$filename'</script>";
+			header("Pragma: public");
+		header("Expires: 0");
+		header("Cache-Control: must-revalidate, post-check=0, pre-check=0");
+		header("Cache-Control: public");
+		header("Content-Description: File Transfer");
+		header("Content-type: application/octet-stream");
+		header('Content-Disposition: attachment; filename="'.basename($filename).'"');
+		header("Content-Transfer-Encoding: binary");
+		header("Content-Length: ".filesize($filename));
+		ob_end_flush();
+		readfile($filename);
+		unlink($filename);
+		//echo "<script>window.location.href='a.php?filename=$filename'</script>";
 	}
 	
-	echo "<center><b><a href='albums.php'><u>goto to Albums</u></a></b></center>";
+	//echo "<center><b><a href='albums.php'><u>goto to Albums</u></a></b></center>";
 	
 	?>
 
