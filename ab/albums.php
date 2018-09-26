@@ -261,7 +261,7 @@ if (isset($_REQUEST['images']))
 
 		// $folderName= "zipFolderDemo";
 
-		$filepath = $_SERVER['DOCUMENT_ROOT'] . "/" . $folderName;
+		$filepath = $_SERVER['DOCUMENT_ROOT'] . "/ab/" . $folderName;
 		$rootPath = realpath($filepath);
 
 		// Initialize archive object
