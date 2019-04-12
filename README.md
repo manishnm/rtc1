@@ -7,6 +7,8 @@
 
 (https://rtdownloader.000webhostapp.com)
 
+(https://rtdownloader.herokuapp.com/ab/)
+
 rtdownloader is web application which lets you download facebook albums instantly.
 
   - Responsive
